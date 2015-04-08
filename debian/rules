@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+#DH_VERBOSE = 1
+export PYBUILD_NAME = tabulate
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_install:
+	dh_install
+	# Install executable in python3-tabulate only to avoid name collision.
+	rm -rf $(CURDIR)/debian/python-tabulate/usr/bin

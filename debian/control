@@ -1,0 +1,54 @@
+Source: python-tabulate
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: ChangZhuo Chen (陳昌倬) <czchen@gmail.com>,
+           Sandro Tosi <morph@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python3-all,
+               python3-nose,
+               python3-setuptools,
+               python-all (>= 2.6.6-3~),
+               python-nose,
+               python-setuptools,
+Standards-Version: 3.9.6
+Section: python
+Homepage: https://bitbucket.org/astanin/python-tabulate/
+Vcs-Git: git://anonscm.debian.org/python-modules/packages/python-tabulate.git
+Vcs-Browser: http://anonscm.debian.org/cgit/python-modules/packages/python-tabulate.git
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+
+Package: python-tabulate
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+Description: pretty-print tabular data in Python2
+ Pretty-print tabular data in Python, a library and a command-line utility.
+ The main use cases of the library are:
+ .
+  * printing small tables without hassle: just one function call, formatting is
+    guided by the data itself
+  * authoring tabular data for lightweight plain-text markup: multiple output
+    formats suitable for further editing or transformation
+  * readable presentation of mixed textual and numeric data: smart column
+    alignment, configurable number formatting, alignment by a decimal point
+ .
+ This package installs the library for Python 2.
+
+Package: python3-tabulate
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+Description: pretty-print tabular data in Python3
+ Pretty-print tabular data in Python, a library and a command-line utility.
+ The main use cases of the library are:
+ .
+  * printing small tables without hassle: just one function call, formatting is
+    guided by the data itself
+  * authoring tabular data for lightweight plain-text markup: multiple output
+    formats suitable for further editing or transformation
+  * readable presentation of mixed textual and numeric data: smart column
+    alignment, configurable number formatting, alignment by a decimal point
+ .
+ This package installs the library for Python 3, and the cli tool.
