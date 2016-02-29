@@ -1,6 +1,7 @@
 Source: python-tabulate
 Priority: optional
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: tcpcloud Packaging Team <pkg-team@tcpcloud.eu>
+XSBC-Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: ChangZhuo Chen (陳昌倬) <czchen@gmail.com>,
            Sandro Tosi <morph@debian.org>
 Build-Depends: debhelper (>= 9),
